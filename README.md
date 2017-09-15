@@ -10,11 +10,16 @@ This script was tested only on Python 3.6
 
 Usage
 -----
-GoDaddyDDNS.py [-h] config sleep
+.. code-block:: python
+usage: GoDaddyDDNS.py [-h] config sleep
 
 positional arguments:
-     config - Config file that includes the key, secret, hostname and ttl.
-     sleep - Time between each IP address change check (default is 10 minutes).
+  config      Config file that includes the key, secret, hostname and ttl.
+  sleep       Time between each IP address change check (default is 10 minutes)
+
+optional arguments:
+  -h, --help  show this help message and exit
+..
 
 The config file is a json built up like that:
 ```json
@@ -26,4 +31,4 @@ The config file is a json built up like that:
 }
 ```
 
-You can obtain the key and the secret key by creating a production key at https://developer.godaddy.com/keys/.
+You can obtain the key and the secret key by creating a production key at https://developer.godaddy.com/keys
